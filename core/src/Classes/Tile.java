@@ -12,27 +12,29 @@ import Classes.enums.*;
  * @author Martijn
  */
 public class Tile {
-    
+
     private TileType tiletype;
-    
-    public Tile(TileType cavetiletype)
-    {
+
+    public Tile(TileType cavetiletype) {
         this.tiletype = cavetiletype;
-        
+
     }
-    
+
     /**
      *
      * @param toSet
-     * @return whether or not the given TileType is NOT the same as the one already there
+     * @return whether or not the given TileType is NOT the same as the one
+     * already there
      */
-    public boolean setTileType(TileType toSet)
-    {
-        if(!toSet.equals(tiletype))
-        {
+    public boolean setTileType(TileType toSet) {
+        if (!toSet.equals(tiletype)) {
             tiletype = toSet;
             return true;
         }
         return false;
+    }
+
+    public TileType getTileType() {
+        return tiletype;
     }
 }

@@ -12,12 +12,65 @@ package Classes.enums;
 
 /*
 Format
-*/
-
+ */
 public enum TileType {
-    base,
-    left,
-    right,
-    top,
-    bottom
+    base {
+        @Override
+        public int getXCoord() {
+            return 3;
+        }
+
+        @Override
+        public int getYCoord() {
+            return 2;
+        }
+    },
+    left {
+        @Override
+        public int getXCoord() {
+            return 0;
+        }
+
+        @Override
+        public int getYCoord() {
+            return 2;
+        }
+    },
+    right {
+        @Override
+        public int getXCoord() {
+            return 1;
+        }
+
+        @Override
+        public int getYCoord() {
+            return 2;
+        }
+    },
+    top {
+        @Override
+        public int getXCoord() {
+            return 0;
+        }
+
+        @Override
+        public int getYCoord() {
+            return 3;
+        }
+    },
+    bottom {
+        @Override
+        public int getXCoord() {
+            return 1;
+        }
+
+        @Override
+        public int getYCoord() {
+            return 3;
+        }
+    };
+
+    public abstract int getXCoord();
+
+    public abstract int getYCoord();
 }

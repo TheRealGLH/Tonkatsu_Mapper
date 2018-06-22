@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class Dungeon {
     
-    ArrayList<Floor> floors;
+    public ArrayList<Floor> floors;
     
     public Dungeon()
     {
